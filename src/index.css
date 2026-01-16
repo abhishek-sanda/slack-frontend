@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+
+/* Light mode is default */
+html.reading, .reading {
+  background-color: #f7ecd9 !important;
+  color:  black !important;
+}
+html.reading, .reading body {
+  background-color: #f7ecd9 !important;
+  color: black !important;
+}
+/* Optional: style other elements */
