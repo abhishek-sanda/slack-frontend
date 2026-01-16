@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = import.meta.env.VITE_USER_API_URL || "http://localhost:4005/api/user";
+const API = import.meta.env.VITE_USER_API_URL || "https://slack-backend-3mvw.onrender.com/api/user";
 
 export async function registerUser({ username, password, email }) {
   const res = await axios.post(`${API}/register`, { username, password, email });
