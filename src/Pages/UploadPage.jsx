@@ -99,6 +99,7 @@ import { useTheme } from "./ThemeContext";
 import axios from "axios";
 const API = import.meta.env.VITE_GATEWAY_API_URL || "http://localhost:4003/api";
 
+
 // Theme helpers
 function getBgColor(theme) {
   if (theme === "dark") return "#181B24";
@@ -292,7 +293,7 @@ export default function UploadPage() {
         </div>
       )}
       <div
-        className={`mt-4 min-h-[24px]`}
+        className={`mt-4 min-h-6`}
         style={{
           color:
             status === "Summary ready!"
@@ -379,7 +380,7 @@ export default function UploadPage() {
       )}
       {recordingId && (
         <a
-          href={`/api/media/download/${recordingId}`}
+          href={`${API}/media/download/${recordingId}`}
           className="text-blue-600 underline mt-2 block"
           target="_blank"
           rel="noopener noreferrer"

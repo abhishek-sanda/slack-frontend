@@ -213,7 +213,7 @@ export default function ChatPage() {
 
   return (
     <div
-      className="max-w-lg mx-auto mt-10 p-6 shadow-lg rounded-lg flex flex-col h-[600px]"
+      className="max-w-lg mx-auto mt-10 p-6 shadow-lg rounded-lg flex flex-col h-150"
       style={{
         backgroundColor: getCardColor(theme),
         color: getTextColor(theme),
