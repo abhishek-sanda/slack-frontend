@@ -39,7 +39,7 @@
 //     </div>
 //   );
 // }
-const API = import.meta.env.VITE_CHAT_API_URL || "http://localhost:4001/api";
+const API = import.meta.env.VITE_CHAT_API_URL || "https://slack-backend-3mvw.onrender.com/api";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { useChat } from "../services/chatService";
@@ -185,7 +185,7 @@ export default function ChatPage() {
             <a
               key={i}
               
-              href={`http://localhost:4001/download/${att.name}`}
+              href={`https://slack-backend-3mvw.onrender.com/download/${att.name}`}
               download={att.name}
               target="_blank"
               rel="noopener noreferrer"

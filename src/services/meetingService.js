@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = import.meta.env.VITE_GATEWAY_API_URL || "http://localhost:4002/api";
+const API = import.meta.env.VITE_GATEWAY_API_URL || "https://slack-backend-3mvw.onrender.com/api";
 
 export async function fetchMeetings() {
   const res = await axios.get(`${API}/meetings`);

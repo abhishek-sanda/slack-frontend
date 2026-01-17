@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = import.meta.env.VITE_GATEWAY_API_URL || "http://localhost:4003/api";
+const API = import.meta.env.VITE_GATEWAY_API_URL || "https://slack-backend-3mvw.onrender.com/api";
 
 export async function uploadRecording(file) {
   const formData = new FormData();
