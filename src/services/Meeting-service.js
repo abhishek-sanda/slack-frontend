@@ -2,7 +2,7 @@
 import axios from "axios";
 import { io } from "socket.io-client";
 
-const API = import.meta.env.VITE_MEETING_API_URL || "https://slack-backend-3mvw.onrender.com/api" || "/api";
+const API = import.meta.env.VITE_MEETING_API_URL || "https://slack-backend-3mvw.onrender.com/api" ;
 
 // 
 
